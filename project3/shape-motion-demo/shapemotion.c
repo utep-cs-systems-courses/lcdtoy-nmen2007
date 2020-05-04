@@ -213,15 +213,13 @@ void wdt_c_handler()
   clearScreen(COLOR_BLACK);
   diamond();
 }
-
-if (!(switches & BIT2)){
+  if (!(switches & BIT2)){
   redrawScreen = 0;
   buzzer_set_period(600);
   clearScreen(COLOR_BLACK);
   star();
 }
-
- if (!(switches & BIT3)){
+  if (!(switches & BIT3)){
    redrawScreen = 0;
    buzzer_set_period(900);
    clearScreen(COLOR_BLACK);
